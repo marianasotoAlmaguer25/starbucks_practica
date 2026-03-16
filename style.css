@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #1e3932;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+
+.contenedor {
+    padding: 20px;
+}
+
+.tarjeta {
+    border: 2px solid #00754a;
+    margin: 10px auto;
+    padding: 15px;
+    width: 300px;
+}
