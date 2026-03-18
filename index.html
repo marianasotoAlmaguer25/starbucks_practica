@@ -3,48 +3,65 @@
 
 <head>
     <meta charset="UTF-8">
-    <title> Starbucks </title>
+    <title>Starbucks - Mi Menú</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <img src="logo.png" alt="Logo de Starbucks" class="logo">
-        <div class="header-texto">
-            <p>¡Disfrútalos!</p>
-            <h1>Conoce nuestras bebidas y alimentos de temporada</h1>
+    <nav class="barra-navegacion">
+        <img src="logo.png" alt="Logo" class="logo-pequeño">
+        <div class="links-flex">
+            <a href="#">MENU</a>
+            <a href="#">REWARDS</a>
         </div>
+    </nav>
+
+    <header class="hero-starbucks">
+        <div class="mensaje-sticky">
+            ¡Bebidas de temporada disponibles!
+        </div>
+        <h1>Conoce nuestras bebidas</h1>
     </header>
 
     <main class="contenedor-principal">
-        <h2>Bebidas</h2>
-        <hr>
+        <div class="grid-bebidas">
 
-        <div class="menu-bebidas">
-
-            <div class="tarjeta-bebida">
-                <img src="bebidacaliente.png" alt="Bebida Caliente" class="img-bebida">
+            <div class="tarjeta">
+                <div class="circulo-relativo">
+                    <img src="bebidaCaliente.png" class="img-absoluta" alt="Bebidas Calientes">
+                </div>
                 <h3>Bebidas Calientes</h3>
             </div>
 
-            <div class="tarjeta-bebida">
-                <img src="frapuccino.png" alt="Frappuccino" class="img-bebida">
+            <div class="tarjeta">
+                <div class="circulo-relativo">
+                    <img src="frapuccino.png" class="img-absoluta" alt="Frappuccino">
+                </div>
                 <h3>Frappuccino</h3>
             </div>
 
-            <div class="tarjeta-bebida">
-                <img src="te.png" alt="Bebida Base Té" class="img-bebida">
-                <h3>Bebidas Base Té</h3>
-            </div>
-
-            <div class="tarjeta-bebida">
-                <img src="coldBrew.png" alt="Cold Brew" class="img-bebida">
+            <div class="tarjeta">
+                <div class="circulo-relativo">
+                    <img src="coldBrew.png" class="img-absoluta" alt="Cold Brew">
+                </div>
                 <h3>Cold Brew</h3>
             </div>
-            <div class="Alimentos">
-                <img src="al.png" alt="Alimentos" class="img-alimentos">
+
+            <div class="tarjeta">
+                <div class="circulo-relativo">
+                    <img src="te.png" class="img-absoluta" alt="Té de Hierbas">
+                </div>
+                <h3>Té de Hierbas</h3>
             </div>
+
+            <div class="tarjeta">
+                <div class="circulo-relativo">
+                    <img src="al.png" class="img-absoluta" alt="Alimentos">
+                </div>
+                <h3>Alimentos de Temporada</h3>
+            </div>
+
         </div>
     </main>
 

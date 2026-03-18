@@ -1,90 +1,79 @@
 body {
-
-    font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     color: #1e3932;
-
-    line-height: 1.6;
     margin: 0;
     text-align: center;
-
 }
 
-
-header {
-    background-color: #f7f9f9;
-
-    padding: 30px;
+.barra-navegacion {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background: white;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* El p y el h1 de adentro HEREDAN el color y la fuente del body automáticamente. */
-.header-texto {
-    max-width: 800px;
-    margin: 0 auto;
+.logo-pequeño {
+    width: 50px;
 }
 
-.header-texto p {
+.links-flex a {
+    text-decoration: none;
+    color: #1e3932;
     font-weight: bold;
+    margin-left: 20px;
+}
 
+.hero-starbucks {
+    margin-top: 70px;
 }
 
 
-
-.contenedor-principal {
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 0 20px;
-    text-align: left;
-
-
+.mensaje-sticky {
+    position: sticky;
+    top: 70px;
+    background-color: #d4e9e2;
+    padding: 10px;
+    font-weight: bold;
+    z-index: 99;
 }
 
 
-.menu-bebidas {
-    font-size: 0.9rem;
-
+.grid-bebidas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
 }
 
-
-.tarjeta-bebida {
-
-
-    text-align: center;
+.tarjeta {
     width: 200px;
-    margin: 15px;
-    display: inline-block;
-
-    vertical-align: top;
 }
 
-
-
-.tarjeta-bebida h3 {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-
-.logo {
-    width: 80px;
-    height: auto;
-    display: block;
+.circulo-relativo {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #1e3932;
+    border-radius: 50%;
     margin: 0 auto 15px auto;
 }
 
-.img-bebida {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-
-    border: 5px solid #d4e9e2;
-
-    object-fit: cover;
-
+.img-absoluta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
 }
 
-hr {
-    border: none;
-    border-top: 1px solid #e0e0e0;
-    margin: 15px 0 30px 0;
+h3 {
+    font-size: 1rem;
+    margin-top: 10px;
 }
