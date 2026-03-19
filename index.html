@@ -3,67 +3,61 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Starbucks - Mi Menú</title>
+    <title>Starbucks Mariana - Proyecto Final</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav class="barra-navegacion">
-        <img src="logo.png" alt="Logo" class="logo-pequeño">
-        <div class="links-flex">
-            <a href="#">MENU</a>
-            <a href="#">REWARDS</a>
+    <header class="navbar">
+        <div class="nav-left">
+            <img src="logo.png" alt="Logo Starbucks" class="logo">
+            <nav class="links">
+                <a href="#">MENÚ</a>
+                <a href="#">REWARDS</a>
+                <a href="#">GIFT CARDS</a>
+            </nav>
         </div>
-    </nav>
-
-    <header class="hero-starbucks">
-        <div class="mensaje-sticky">
-            ¡Bebidas de temporada disponibles!
+        <div class="nav-right">
+            <a href="#" class="find-store">Find a Store</a>
+            <button class="btn btn-outline">Sign in</button>
+            <button class="btn btn-dark">Join now</button>
         </div>
-        <h1>Conoce nuestras bebidas</h1>
     </header>
 
-    <main class="contenedor-principal">
-        <div class="grid-bebidas">
-
-            <div class="tarjeta">
-                <div class="circulo-relativo">
-                    <img src="bebidaCaliente.png" class="img-absoluta" alt="Bebidas Calientes">
-                </div>
-                <h3>Bebidas Calientes</h3>
-            </div>
-
-            <div class="tarjeta">
-                <div class="circulo-relativo">
-                    <img src="frapuccino.png" class="img-absoluta" alt="Frappuccino">
-                </div>
-                <h3>Frappuccino</h3>
-            </div>
-
-            <div class="tarjeta">
-                <div class="circulo-relativo">
-                    <img src="coldBrew.png" class="img-absoluta" alt="Cold Brew">
-                </div>
-                <h3>Cold Brew</h3>
-            </div>
-
-            <div class="tarjeta">
-                <div class="circulo-relativo">
-                    <img src="te.png" class="img-absoluta" alt="Té de Hierbas">
-                </div>
-                <h3>Té de Hierbas</h3>
-            </div>
-
-            <div class="tarjeta">
-                <div class="circulo-relativo">
-                    <img src="al.png" class="img-absoluta" alt="Alimentos">
-                </div>
-                <h3>Alimentos de Temporada</h3>
-            </div>
-
+    <main class="hero-section">
+        <div class="hero-content">
+            <h1>¡Hola, Mariana!</h1>
+            <h2>Qué gran día para un café.</h2>
+            <button class="btn-order">Comienza tu orden</button>
+        </div>
+        <div class="hero-image">
+            <img src="persona_bebida.jpg" alt="Mariana disfrutando un café">
         </div>
     </main>
+
+    <section class="grid-bebidas">
+        <div class="item">
+            <img src="al.png" alt="Bebida AL">
+            <p>Iced Coffee</p>
+        </div>
+        <div class="item">
+            <img src="bebidaCaliente.png" alt="Bebida Caliente">
+            <p>Hot Coffee</p>
+        </div>
+        <div class="item">
+            <img src="coldBrew.png" alt="Cold Brew">
+            <p>Cold Brew</p>
+        </div>
+        <div class="item">
+            <img src="frapuccino.png" alt="Frapuccino">
+            <p>Frappuccino®</p>
+        </div>
+        <div class="item">
+            <img src="te.png" alt="Té">
+            <p>Iced Tea</p>
+        </div>
+    </section>
 
 </body>
 
