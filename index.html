@@ -4,56 +4,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starbucks Mariana - Proyecto Final</title>
+    <title>Starbucks Proyecto - Mariana</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header class="navbar">
-        <div class="nav-left">
+        <div class="nav-container">
             <img src="logo.png" alt="Logo Starbucks" class="logo">
-            <nav class="nav-links"> <a href="#">MENÚ</a>
-                <a href="#">REWARDS</a>
-                <a href="#">GIFT CARDS</a>
+            <nav class="nav-links">
+                <a href="#">MENÚ</a>
+                <a href="#rewards-view">REWARDS</a> <a href="#">GIFT CARDS</a>
             </nav>
         </div>
         <div class="nav-right">
-            <a href="#" class="find-store">Find a Store</a>
+            <span>Find a Store</span>
             <button class="btn btn-outline">Sign in</button>
             <button class="btn btn-dark">Join now</button>
         </div>
     </header>
 
-    <main class="main-banner">
-        <div class="banner-text">
-            <h1>¡Hola, Mariana!</h1>
-            <h2>Qué gran día para un café.</h2>
-            <button class="btn-order">Comienza tu orden</button>
-        </div>
-        <div class="banner-img"> <img src="persona_bebida.jpg" alt="Mariana disfrutando un café">
-        </div>
-    </main>
+    <div class="main-content">
+        <main class="main-banner">
+            <div class="banner-text">
+                <h1>¡Hola, Mariana!</h1>
+                <h2>Qué gran día para un café.</h2>
+                <button class="btn-order">Comienza tu orden</button>
+            </div>
+            <div class="banner-img">
+                <img src="persona_bebida.jpg" alt="Banner">
+            </div>
+        </main>
 
-    <section class="drinks-grid">
-        <div class="drink-item"> <img src="al.png" alt="Bebida AL">
-            <p>Iced Coffee</p>
+        <section class="drinks-grid">
+            <div class="drink-item">
+                <img src="bebidaCaliente.png" alt="Hot Coffee">
+                <p>Hot Coffee</p>
+            </div>
+            <div class="drink-item">
+                <img src="frapuccino.png" alt="Frappuccino">
+                <p>Frappuccino</p>
+            </div>
+            <div class="drink-item">
+                <img src="coldBrew.png" alt="Cold Brew">
+                <p>Cold Brew</p>
+            </div>
+            <div class="drink-item">
+                <img src="te.png" alt="Iced Tea">
+                <p>Iced Tea</p>
+            </div>
+            <div class="drink-item">
+                <img src="al.png" alt="Alimentos">
+                <p>Alimentos</p>
+            </div>
+        </section>
+
+        <section class="extra-products">
+            <div class="product-group">
+                <div class="group-header">
+                    <h3>Café en grano</h3>
+                </div>
+                <div class="group-content">
+                    <div class="product-card is-round">
+                        <img src="cafe_chiapas.png" alt="Café">
+                        <p>Elige tu café favorito</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h4>Sobre Nosotros</h4>
+                    <p>Trabaja con nosotros</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Atención al cliente</h4>
+                    <p>Contáctanos</p>
+                </div>
+            </div>
+            <div class="social-bar">
+                <img src="fb_icon.png"> <img src="insta_icon.png"> <img src="x_icon.png"> <img src="yt_icon.png">
+            </div>
+        </footer>
+    </div>
+
+    <section id="rewards-view" class="rewards-overlay">
+        <div class="rewards-left">
+            <div class="rewards-branding">
+                <p>STARBUCKS<sup>®</sup> REWARDS</p>
+            </div>
+            <h1>Holaaaaa, café gratis</h1>
+            <div class="rewards-btns">
+                <button class="btn btn-outline-white">Inicia Sesión</button>
+                <button class="btn btn-white">Únete Ahora</button>
+            </div>
+            <img src="persona_bebida.jpg" class="phone-img">
         </div>
-        <div class="drink-item">
-            <img src="bebidaCaliente.png" alt="Bebida Caliente">
-            <p>Hot Coffee</p>
-        </div>
-        <div class="drink-item">
-            <img src="coldBrew.png" alt="Cold Brew">
-            <p>Cold Brew</p>
-        </div>
-        <div class="drink-item">
-            <img src="frapuccino.png" alt="Frapuccino">
-            <p>Frappuccino®</p>
-        </div>
-        <div class="drink-item">
-            <img src="te.png" alt="Té">
-            <p>Iced Tea</p>
+
+        <div class="rewards-right">
+            <a href="#" class="btn-cerrar">✕ Volver</a>
+            <div class="rewards-header">
+                <h3>Únete a Starbucks Rewards y desbloquea beneficios...</h3>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <img src="nuevos-lanzamientos.png">
+                    <p>Disfruta antes que nadie de lanzamientos exclusivos</p>
+                </div>
+                <div class="benefit-item">
+                    <img src="refill-cafe.png">
+                    <p>Rellena tu vaso de café del día</p>
+                </div>
+                <div class="benefit-item">
+                    <img src="cumpleaños.png">
+                    <p>Ven por tu bebida de cumpleaños</p>
+                </div>
+                <div class="benefit-item">
+                    <img src="ofertas-personalizadas.png">
+                    <p>Ofertas exclusivas y personalizadas para ti</p>
+                </div>
+            </div>
+
+            <div class="gold-level">
+                <h4>Obtén más beneficios al llegar a nivel Gold con 200 estrellas ★</h4>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <img src="panaderia-bienvenida.png">
+                        <p>Pieza de panadería de bienvenida al Nivel Gold</p>
+                    </div>
+                    <div class="benefit-item">
+                        <img src="card-gold.png">
+                        <p>Tarjeta Gold Digital</p>
+                    </div>
+                    <div class="benefit-item">
+                        <img src="100-estrellas.png">
+                        <p>Bebida o pieza de panadería por cada 100 Estrellas acumuladas</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
