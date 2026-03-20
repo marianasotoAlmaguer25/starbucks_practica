@@ -5,7 +5,6 @@
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -13,6 +12,10 @@
     padding: 15px 40px;
     background: white;
     border-bottom: 1px solid #ddd;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav-left,
@@ -27,7 +30,7 @@
     height: auto;
 }
 
-.links a,
+.nav-links a,
 .find-store {
     text-decoration: none;
     color: black;
@@ -55,7 +58,7 @@
     border: none;
 }
 
-.hero-section {
+.main-banner {
     display: flex;
     background-color: #d4e9e2;
     height: 400px;
@@ -64,7 +67,7 @@
     overflow: hidden;
 }
 
-.hero-content {
+.banner-text {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -72,12 +75,12 @@
     padding-left: 50px;
 }
 
-.hero-content h1 {
+.banner-text h1 {
     font-size: 40px;
     color: #1e3932;
 }
 
-.hero-content h2 {
+.banner-text h2 {
     font-size: 24px;
     color: #1e3932;
     font-weight: 400;
@@ -95,18 +98,17 @@
     cursor: pointer;
 }
 
-.hero-image {
+.banner-img {
     flex: 1;
 }
 
-.hero-image img {
+.banner-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-
-.grid-bebidas {
+.drinks-grid {
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -114,23 +116,75 @@
     flex-wrap: wrap;
 }
 
-.item {
+.drink-item {
     text-align: center;
     width: 150px;
+
+    position: relative;
 }
 
-.item img {
+
+.drink-item::before {
+    content: "NUEVO";
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    background: #00754a;
+    color: white;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.drink-item img {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
     transition: transform 0.3s;
 }
 
-.item img:hover {
+.drink-item img:hover {
     transform: scale(1.1);
 }
 
-.item p {
+.drink-item p {
     font-weight: bold;
     color: #1e3932;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .main-banner {
+        flex-direction: column;
+        height: auto;
+        margin: 15px;
+    }
+
+    .banner-img {
+        order: 1;
+        height: 250px;
+    }
+
+    .banner-text {
+        order: 2;
+        padding: 30px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .banner-text h1 {
+        font-size: 30px;
+    }
 }
