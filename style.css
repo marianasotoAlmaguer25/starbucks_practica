@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica', sans-serif;
 }
 
 
@@ -10,66 +10,66 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px;
-    background: white;
-    border-bottom: 1px solid #ddd;
+    padding: 15px 40px;
+    background: #fff;
+    border-bottom: 1px solid #f2f2f2;
     position: sticky;
     top: 0;
-    z-index: 1000;
-}
-
-.nav-container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    z-index: 100;
 }
 
 .logo {
     width: 50px;
-    height: auto;
+    height: 50px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 14px;
+    color: #000;
+    font-weight: 800;
+    font-size: 13px;
 }
 
 .nav-right {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 .btn {
-    padding: 8px 18px;
+    padding: 10px 22px;
     border-radius: 50px;
     font-weight: bold;
     cursor: pointer;
 }
 
 .btn-outline {
-    background: white;
-    border: 1px solid black;
+    background: #fff;
+    border: 1px solid #000;
 }
 
 .btn-dark {
-    background: black;
-    color: white;
+    background: #000;
+    color: #fff;
     border: none;
 }
 
 
-.main-banner {
+.hero-banner {
     display: flex;
     background-color: #d4e9e2;
-    margin: 30px;
-    border-radius: 15px;
+    margin: 30px 40px;
+    border-radius: 10px;
     overflow: hidden;
 }
 
-.banner-text {
+.hero-text {
     flex: 1;
     padding: 60px;
     display: flex;
@@ -77,96 +77,133 @@
     justify-content: center;
 }
 
-.banner-text h1 {
+.hero-text h1 {
     font-size: 40px;
     color: #1e3932;
-}
-
-.banner-text h2 {
-    font-size: 20px;
-    color: #1e3932;
-    font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .btn-order {
     background: #1e3932;
-    color: white;
+    color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border-radius: 50px;
     font-weight: bold;
     width: fit-content;
 }
 
-.banner-img {
+.hero-image {
     flex: 1;
 }
 
-.banner-img img {
+.hero-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 
-.drinks-grid {
-    display: flex;
-    justify-content: center;
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 40px;
     padding: 40px;
-    flex-wrap: wrap;
-}
-
-.drink-item {
     text-align: center;
-    width: 150px;
 }
 
-.drink-item img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+.product-item {
+    position: relative;
 }
 
-.drink-item p {
+.product-item img {
+    width: 160px;
+    margin-bottom: 15px;
+}
+
+.badge-new {
+    background: #006241;
+    color: #fff;
+    font-size: 10px;
     font-weight: bold;
-    color: #1e3932;
+    padding: 2px 8px;
+    border-radius: 4px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.extra-products {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
+.extra-category {
+    padding: 0 40px;
 }
 
-.product-group {
-    margin-bottom: 40px;
-}
-
-.group-header {
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 20px;
+.category-block h3 {
+    border-bottom: 1px solid #eee;
     padding-bottom: 10px;
+    margin-top: 30px;
+    font-size: 18px;
 }
 
-.group-content {
+.category-item {
+    padding: 30px 0;
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.product-card {
-    text-align: center;
+.img-container img {
+    width: 140px;
+}
+
+.img-container-round {
     width: 180px;
-}
-
-.is-round img {
-    width: 100%;
+    height: 180px;
     border-radius: 50%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
+    background: #1e3932;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 10px;
 }
+
+.img-container-round img {
+    width: 60%;
+}
+
+
+.footer {
+    background: #f9f9f9;
+    padding: 40px;
+    margin-top: 60px;
+    border-top: 1px solid #eee;
+}
+
+.footer-links {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 30px;
+}
+
+.footer-col h4 {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.footer-col a {
+    display: block;
+    text-decoration: none;
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.social-bar img {
+    width: 30px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
 
 
 .rewards-overlay {
@@ -176,39 +213,61 @@
     left: 0;
     width: 100%;
     height: calc(100vh - 80px);
-    background: white;
-    z-index: 2000;
-    overflow-y: auto;
+    background: #fff;
+    z-index: 500;
 }
-
 
 #rewards-view:target {
     display: flex;
 }
 
 
-.rewards-left {
-    flex: 1;
-    background-color: #006241;
-    color: white;
-    padding: 60px;
+
+.rewards-sidebar {
+    flex: 1.5;
+    background: #006241;
+    color: #fff;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.rewards-branding {
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 20px;
+.rewards-content {
+    flex: 2.5;
+    padding: 50px;
+    overflow-y: auto;
+    position: relative;
 }
 
-.rewards-left h1 {
-    font-size: 40px;
+
+.sidebar-rewards-img {
+    max-height: 400px;
+
+    width: 80%;
+
+    margin: 30px auto 0 auto;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+
+}
+
+
+.rewards-branding {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.rewards-sidebar h2 {
+    font-size: 32px;
     margin-bottom: 30px;
 }
 
-.rewards-btns {
+.rewards-actions {
     display: flex;
     gap: 15px;
 }
@@ -231,97 +290,102 @@
     font-weight: bold;
 }
 
-.phone-img {
-    width: 200px;
-    margin-top: 40px;
-    border-radius: 10px;
-}
-
-.rewards-right {
-    flex: 2;
-    padding: 40px;
-    position: relative;
-}
-
-.btn-cerrar {
+.close-overlay {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 30px;
     text-decoration: none;
-    color: #333;
     font-weight: bold;
+    color: #000;
+    z-index: 10;
 }
 
 .benefits-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    margin-top: 40px;
-}
-
-.benefit-item {
+    margin-top: 30px;
     text-align: center;
 }
 
-.benefit-item img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
+.benefit-card img {
+    width: 60px;
     margin-bottom: 10px;
 }
 
-.benefit-item p {
-    font-size: 12px;
-    line-height: 1.2;
+.benefit-card p {
+    font-size: 11px;
     color: #333;
+    line-height: 1.2;
 }
 
-.gold-level {
-    margin-top: 60px;
+.gold-tier {
+    margin-top: 50px;
     border-top: 1px solid #eee;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
-.gold-level h4 {
+.gold-tier h4 {
     text-align: center;
     color: #cba258;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 
-.footer {
-    padding: 40px;
-    border-top: 1px solid #eee;
-    background-color: #f7f7f7;
-}
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
 
-.footer-container {
-    display: flex;
-    gap: 100px;
-    max-width: 1100px;
-    margin: 0 auto;
-}
+    .hero-banner {
+        flex-direction: column;
+        margin: 20px;
+    }
 
-.footer-col h4 {
-    margin-bottom: 15px;
-    font-size: 16px;
-    color: #333;
-}
+    .hero-text {
+        padding: 30px;
+    }
 
-.footer-col p {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
+    .section-grid,
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
 
-.social-bar {
-    max-width: 1100px;
-    margin: 30px auto 0;
-    display: flex;
-    gap: 15px;
-}
+    .product-item img {
+        width: 120px;
+    }
 
-.social-bar img {
-    width: 30px;
-    height: 30px;
+    .extra-category {
+        padding: 0 20px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+
+    .rewards-overlay {
+        flex-direction: column;
+        top: 0;
+        height: 100vh;
+    }
+
+    .rewards-sidebar,
+    .rewards-content {
+        padding: 30px;
+        flex: auto;
+    }
+
+    .close-overlay {
+        top: 15px;
+        right: 20px;
+    }
+
+    .sidebar-rewards-img {
+        max-height: 200px;
+        width: 60%;
+    }
 }

@@ -4,145 +4,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starbucks Proyecto - Mariana</title>
+    <title>Starbucks Proyecto Final - Mariana Soto</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header class="navbar">
-        <div class="nav-container">
+        <div class="nav-left">
             <img src="logo.png" alt="Logo Starbucks" class="logo">
             <nav class="nav-links">
                 <a href="#">MENÚ</a>
-                <a href="#rewards-view">REWARDS</a> <a href="#">GIFT CARDS</a>
+                <a href="#rewards-view">REWARDS</a>
             </nav>
         </div>
         <div class="nav-right">
-            <span>Find a Store</span>
-            <button class="btn btn-outline">Sign in</button>
-            <button class="btn btn-dark">Join now</button>
+            <div class="store-locator">
+                <span>LOCALIZA TU TIENDA</span>
+            </div>
+            <button class="btn btn-outline">Inicia Sesión</button>
+            <button class="btn btn-dark">Únete Ahora</button>
         </div>
     </header>
 
     <div class="main-content">
-        <main class="main-banner">
-            <div class="banner-text">
+        <section class="hero-banner">
+            <div class="hero-text">
                 <h1>¡Hola, Mariana!</h1>
-                <h2>Qué gran día para un café.</h2>
+                <p>Qué gran día para un café.</p>
                 <button class="btn-order">Comienza tu orden</button>
             </div>
-            <div class="banner-img">
-                <img src="persona_bebida.jpg" alt="Banner">
-            </div>
-        </main>
-
-        <section class="drinks-grid">
-            <div class="drink-item">
-                <img src="bebidaCaliente.png" alt="Hot Coffee">
-                <p>Hot Coffee</p>
-            </div>
-            <div class="drink-item">
-                <img src="frapuccino.png" alt="Frappuccino">
-                <p>Frappuccino</p>
-            </div>
-            <div class="drink-item">
-                <img src="coldBrew.png" alt="Cold Brew">
-                <p>Cold Brew</p>
-            </div>
-            <div class="drink-item">
-                <img src="te.png" alt="Iced Tea">
-                <p>Iced Tea</p>
-            </div>
-            <div class="drink-item">
-                <img src="al.png" alt="Alimentos">
-                <p>Alimentos</p>
+            <div class="hero-image">
+                <img src="persona_bebida.jpg" alt="Banner Principal">
             </div>
         </section>
 
-        <section class="extra-products">
-            <div class="product-group">
-                <div class="group-header">
-                    <h3>Café en grano</h3>
+        <section class="products-section">
+            <div class="section-grid">
+                <div class="product-item">
+                    <span class="badge-new">NUEVO</span>
+                    <img src="bebidaCaliente.png" alt="Bebidas calientes">
+                    <p>Bebidas calientes</p>
                 </div>
-                <div class="group-content">
-                    <div class="product-card is-round">
-                        <img src="cafe_chiapas.png" alt="Café">
-                        <p>Elige tu café favorito</p>
+                <div class="product-item">
+                    <span class="badge-new">NUEVO</span>
+                    <img src="coldBrew.png" alt="Cold Brew">
+                    <p>Cold Brew</p>
+                </div>
+                <div class="product-item">
+                    <span class="badge-new">NUEVO</span>
+                    <img src="frapuccino.png" alt="Frappuccino">
+                    <p>Frappuccino</p>
+                </div>
+                <div class="product-item">
+                    <span class="badge-new">NUEVO</span>
+                    <img src="te.png" alt="Iced Tea">
+                    <p>Iced Tea</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="extra-category">
+            <div class="category-block">
+                <h3>Alimentos</h3>
+                <div class="category-item">
+                    <div class="img-container">
+                        <img src="al.png" alt="Alimentos">
                     </div>
+                    <p>Elige tu complemento favorito</p>
+                </div>
+            </div>
+
+            <div class="category-block">
+                <h3>Café en grano</h3>
+                <div class="category-item">
+                    <div class="img-container-round">
+                        <img src="cafe_chiapas.png" alt="Café en grano">
+                    </div>
+                    <p>Elige tu café favorito</p>
                 </div>
             </div>
         </section>
 
         <footer class="footer">
-            <div class="footer-container">
+            <div class="footer-links">
                 <div class="footer-col">
                     <h4>Sobre Nosotros</h4>
-                    <p>Trabaja con nosotros</p>
+                    <a href="#">Trabaja con nosotros</a>
+                    <a href="#">Historias Starbucks</a>
                 </div>
                 <div class="footer-col">
                     <h4>Atención al cliente</h4>
-                    <p>Contáctanos</p>
+                    <a href="#">Contáctanos</a>
+                    <a href="#">Facturas Electrónicas</a>
                 </div>
             </div>
             <div class="social-bar">
-                <img src="fb_icon.png"> <img src="insta_icon.png"> <img src="x_icon.png"> <img src="yt_icon.png">
+                <img src="fb_icon.png" alt="Facebook">
+                <img src="insta_icon.png" alt="Instagram">
+                <img src="x_icon.png" alt="X">
+                <img src="yt_icon.png" alt="YouTube">
             </div>
         </footer>
     </div>
 
     <section id="rewards-view" class="rewards-overlay">
-        <div class="rewards-left">
-            <div class="rewards-branding">
-                <p>STARBUCKS<sup>®</sup> REWARDS</p>
-            </div>
-            <h1>Holaaaaa, café gratis</h1>
-            <div class="rewards-btns">
+        <div class="rewards-sidebar">
+            <div class="rewards-branding">STARBUCKS REWARDS</div>
+            <h2>Holaaaaa, café gratis</h2>
+            <div class="rewards-actions">
                 <button class="btn btn-outline-white">Inicia Sesión</button>
                 <button class="btn btn-white">Únete Ahora</button>
             </div>
-            <img src="persona_bebida.jpg" class="phone-img">
+            <img src="persona_bebida.jpg" class="sidebar-rewards-img" alt="Rewards">
         </div>
 
-        <div class="rewards-right">
-            <a href="#" class="btn-cerrar">✕ Volver</a>
-            <div class="rewards-header">
-                <h3>Únete a Starbucks Rewards y desbloquea beneficios...</h3>
-            </div>
+        <div class="rewards-content">
+            <a href="#" class="close-overlay">✕ Volver al Menú</a>
+            <h3>Únete a Starbucks Rewards y desbloquea beneficios</h3>
 
             <div class="benefits-grid">
-                <div class="benefit-item">
+                <div class="benefit-card">
                     <img src="nuevos-lanzamientos.png">
-                    <p>Disfruta antes que nadie de lanzamientos exclusivos</p>
+                    <p>Lanzamientos exclusivos</p>
                 </div>
-                <div class="benefit-item">
+                <div class="benefit-card">
                     <img src="refill-cafe.png">
-                    <p>Rellena tu vaso de café del día</p>
+                    <p>Rellena tu vaso de café</p>
                 </div>
-                <div class="benefit-item">
+                <div class="benefit-card">
                     <img src="cumpleaños.png">
-                    <p>Ven por tu bebida de cumpleaños</p>
+                    <p>Bebida de cumpleaños</p>
                 </div>
-                <div class="benefit-item">
+                <div class="benefit-card">
                     <img src="ofertas-personalizadas.png">
-                    <p>Ofertas exclusivas y personalizadas para ti</p>
+                    <p>Ofertas personalizadas</p>
                 </div>
             </div>
 
-            <div class="gold-level">
-                <h4>Obtén más beneficios al llegar a nivel Gold con 200 estrellas ★</h4>
+            <div class="gold-tier">
+                <h4>Nivel Gold con 200 estrellas ★</h4>
                 <div class="benefits-grid">
-                    <div class="benefit-item">
+                    <div class="benefit-card">
                         <img src="panaderia-bienvenida.png">
-                        <p>Pieza de panadería de bienvenida al Nivel Gold</p>
+                        <p>Panadería de bienvenida</p>
                     </div>
-                    <div class="benefit-item">
+                    <div class="benefit-card">
                         <img src="card-gold.png">
                         <p>Tarjeta Gold Digital</p>
                     </div>
-                    <div class="benefit-item">
+                    <div class="benefit-card">
                         <img src="100-estrellas.png">
-                        <p>Bebida o pieza de panadería por cada 100 Estrellas acumuladas</p>
+                        <p>Bebida gratis cada 100 estrellas</p>
+                    </div>
+                    <div class="benefit-card">
+                        <img src="15-estrellas-aniversario.png">
+                        <p>Estrellas cada aniversario</p>
                     </div>
                 </div>
             </div>
